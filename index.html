@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Penjualan</title>
+  </head>
+  <body>
+    <h1>Form Penjualan Barang Perangkat Komputer</h1>
+    <form class="form-group">
+      <div class="input-group">
+        <label for="nama_barang">Nama Barang : </label>
+        <input type="text" name="nama_barang" id="nama_barang" />
+      </div>
+      <div class="input-group">
+        <label for="harga">Harga : </label>
+        <input type="number" name="harga" id="harga" />
+      </div>
+      <div class="input-group">
+        <label for="jumlah">Jumlah : </label>
+        <input type="number" name="jumlah" id="jumlah" />
+      </div>
+      <div class="input-group">
+        <label for="jenis_barang">Jenis Barang : </label>
+        <select name="jenis_barang" id="jenis_barang">
+          <option value="PC">PC</option>
+          <option value="Printer">Printer</option>
+          <option value="Memory">Memory</option>
+          <option value="Speaker">Speaker</option>
+          <option value="HardDisk">HardDisk</option>
+          <option value="Aksesoris">Aksesoris</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="pajak">Pajak : </label>
+        <input type="number" name="pajak" id="pajak" />
+      </div>
+      <div class="button-group">
+        <button type="button" id="proses">Proses</button>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </form>
+
+    <table id="tabel_penjualan">
+      <thead>
+        <th>No</th>
+        <th>Nama Barang</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Jenis Barang</th>
+        <th>Pajak</th>
+        <th>Bayar</th>
+      </thead>
+      <tbody></tbody>
+      <tr class="total-group">
+        <td colspan="6" style="text-align: center">Total</td>
+        <td id="total">0</td>
+      </tr>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
